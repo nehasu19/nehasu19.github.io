@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sneha Singh — QA Automation & AI Engineering</title>
+<meta name="description" content="Portfolio of Sneha Singh, QA Automation Engineer building and testing AI-powered tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5f0; --surface:#ffffff; --ink:#1b1d1f; --muted:#5d636b; --line:#e3ded4;
+  --accent:#0f766e; --accent-soft:#e0f2ef; --chip:#f0ece4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121417; --surface:#1b1e22; --ink:#ece9e3; --muted:#a3a9b1; --line:#2c3036;
+    --accent:#5eead4; --accent-soft:#163532; --chip:#252a30;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121417; --surface:#1b1e22; --ink:#ece9e3; --muted:#a3a9b1; --line:#2c3036;
+  --accent:#5eead4; --accent-soft:#163532; --chip:#252a30;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(38px,7vw,64px);line-height:1.05;margin:12px 0 18px}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-size:30px;margin-bottom:24px}
+.grid{display:grid;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{color:var(--muted)}
+.card ul{margin:12px 0 0 18px;color:var(--muted)}
+.card li{margin:4px 0}
+.why{margin-top:14px;padding:10px 14px;background:var(--accent-soft);border-radius:8px;font-size:14px;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{background:var(--chip);border-radius:999px;padding:3px 11px;font-size:13px;color:var(--ink)}
+.links{margin-top:14px;display:flex;gap:16px;font-weight:600;font-size:15px}
+.two{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.label{font-weight:600;margin-bottom:8px}
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
+@media (min-width:760px){.grid.feat{grid-template-columns:1fr 1fr}.grid.feat .card:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">QA Automation Engineer → AI Engineering</div>
+    <h1>Hi, I'm Sneha Singh.</h1>
+    <p class="lead">I test, automate and build AI-powered tools. After years in quality engineering across consulting and product teams — enterprise apps, healthcare and Android Automotive — I now apply that quality mindset to LLM applications and agentic workflows.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/sneha-singh-606b6225/">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/nehasu19">GitHub</a>
+    </div>
+  </header>
+
+  <section id="projects">
+    <h2>Featured projects</h2>
+    <div class="grid feat">
+      <article class="card">
+        <h3>🎯 Job Radar</h3>
+        <div class="chips"><span class="chip">Claude skill</span><span class="chip">Agentic workflow</span><span class="chip">Guardrails</span><span class="chip">Scheduling</span></div>
+        <p>An AI agent skill that runs a personal job search end to end: it searches 10+ job boards and career pages, checks that postings are still live, scores each job 0–100 against a resume, logs matches in a de-duplicated tracker and drafts truthful tailored resumes and cover letters.</p>
+        <ul>
+          <li>Safety by design: never applies, submits forms or contacts anyone, and never invents experience</li>
+          <li>Shipped in versions v1 → v3: daily scheduled runs, weekly digest, closed-posting detection, tracker stats</li>
+        </ul>
+        <div class="why">Shows: agent design, prompt and skill engineering, and responsible AI tooling.</div>
+        <div class="links"><a href="https://github.com/nehasu19/job-radar">Code →</a></div>
+      </article>
+      <article class="card">
+        <h3>🛡️ Privacy-First AI Router</h3>
+        <div class="chips"><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">WebGPU</span></div>
+        <p>Estimates monthly LLM API costs by model tier and routes sensitive workloads to private, in-browser models via WebGPU — zero data egress.</p>
+        <div class="why">Shows: LLM cost and privacy trade-offs, front-end delivery, deployment.</div>
+        <div class="links"><a href="https://nehasu19.github.io/privacy-ai-router/">Live demo →</a><a href="https://github.com/nehasu19/privacy-ai-router">Code →</a></div>
+      </article>
+      <article class="card">
+        <h3>🤖 Discord AI Agent</h3>
+        <div class="chips"><span class="chip">Python</span><span class="chip">discord.py</span><span class="chip">Async</span></div>
+        <p>A bot that reads messages and replies in context across servers and DMs, with typing indicators, error handling and secrets kept out of version control.</p>
+        <div class="why">Shows: Python, async event-driven APIs, conversational agents.</div>
+        <div class="links"><a href="https://github.com/nehasu19/discord-agent">Code →</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Test automation</h2>
+    <div class="two">
+      <div class="card"><h3>Selenium (Python)</h3><p>Browser automation scripts with Selenium WebDriver.</p><div class="links"><a href="https://github.com/nehasu19/PythonTest">Code →</a></div></div>
+      <div class="card"><h3>Cypress patterns</h3><p>Exploring Cypress testing patterns and workflows on a real-world payment app.</p><div class="links"><a href="https://github.com/nehasu19/cypress-realworld-app">Code →</a></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="two">
+      <div><p class="label">Testing &amp; automation</p><div class="chips"><span class="chip">Selenium</span><span class="chip">Playwright</span><span class="chip">Cypress</span><span class="chip">Postman</span><span class="chip">API testing</span><span class="chip">Framework design</span></div></div>
+      <div><p class="label">AI</p><div class="chips"><span class="chip">Claude</span><span class="chip">MCP</span><span class="chip">Agentic workflows</span><span class="chip">LLM testing</span><span class="chip">Copilot</span><span class="chip">Cursor</span></div></div>
+      <div><p class="label">Languages &amp; web</p><div class="chips"><span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">Java</span><span class="chip">React</span><span class="chip">Tailwind</span></div></div>
+      <div><p class="label">Delivery</p><div class="chips"><span class="chip">Git</span><span class="chip">CI/CD</span><span class="chip">GitHub Pages</span><span class="chip">Agile</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience areas</h2>
+    <p class="lead">QA &amp; test automation · API &amp; integration testing · CI/CD quality engineering · Android Automotive · Healthcare · Enterprise applications</p>
+    <p style="margin-top:18px"><b>Looking for:</b> AI Engineer, AI Application Developer, Senior QA Automation Engineer, or Quality Engineering for AI systems.</p>
+  </section>
+
+  <footer>
+    Let's talk — <a href="https://www.linkedin.com/in/sneha-singh-606b6225/">LinkedIn</a> · <a href="https://github.com/nehasu19">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
