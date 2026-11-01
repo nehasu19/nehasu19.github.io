@@ -1,4 +1,4 @@
-<!doctype html>
+l<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -49,7 +49,7 @@ h2{font-family:Fraunces,Georgia,serif;font-size:30px;margin-bottom:24px}
 .two{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .label{font-weight:600;margin-bottom:8px}
 footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
-@media (min-width:760px){.grid.feat{grid-template-columns:1fr 1fr}.grid.feat .card:first-child{grid-column:1/-1}}
+@media (min-width:760px){.grid.feat{grid-template-columns:1fr 1fr}.grid.feat .card:first-child,.grid.feat .card.wide{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -78,6 +78,18 @@ footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
         </ul>
         <div class="why">Shows: agent design, prompt and skill engineering, and responsible AI tooling.</div>
         <div class="links"><a href="https://github.com/nehasu19/job-radar">Code →</a></div>
+      </article>
+      <article class="card wide">
+        <h3>⚖️ Decision Model Comparison</h3>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">LLM evaluation</span><span class="chip">Test design</span></div>
+        <p>A test bench that runs the same 74 test cases against three AI decision models — Laya, GLiNER2.5-Decide and Jev — and compares their answers in a Streamlit dashboard.</p>
+        <ul>
+          <li>10 test groups: intent routing, sentiment, spam, urgency, 15 topics, four languages, long text, arithmetic and RAG answer correctness</li>
+          <li>Per-model scores, charts per test group and a filterable table of every case (models disagree, any failed, all passed)</li>
+          <li>Data-driven CSV test cases validated on start, with fairness caveats documented and API keys kept out of the repo</li>
+        </ul>
+        <div class="why">Shows: QA discipline applied to AI — repeatable evaluation of model quality across local and hosted models.</div>
+        <div class="links"><a href="https://github.com/nehasu19/decision-model-comparison">Code →</a></div>
       </article>
       <article class="card">
         <h3>🛡️ Privacy-First AI Router</h3>
